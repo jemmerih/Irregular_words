@@ -1,3 +1,4 @@
+#include "computing.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -31,21 +32,4 @@ char enter(char check[])
     }
     // printf("%s\n",check);
     return check;
-}
-
-int main()
-{
-    int random = 0;
-    char check[16];
-    int error_ps = 0;
-    int error_pp = 0;
-    printf("Please enter word to past simple\n");
-    check[16] = enter(check);                     // enter ps
-    error_ps = check_ps(check, error_ps, random); // check ps
-    printf("Please enter word to past participle\n");
-    check[16] = enter(check);                     // enter pp
-    error_pp = check_pp(check, error_pp, random); // check pp
-    // printf("\nmain -->%s",check);
-    printf("error_ps --> %d\n", error_ps);
-    printf("error_pp --> %d\n", error_pp);
 }
