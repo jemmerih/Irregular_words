@@ -20,6 +20,16 @@ int check_ps(char check[], int error_ps, int random)
     return error_ps;
 }
 
+char lower(char check[])
+{
+    int i = 0;
+    while (i < 16) {
+        check[i] = tolower(check[i]);
+        i++;
+    }
+    return check;
+}
+
 char enter(char check[])
 {
     int i = 0;
