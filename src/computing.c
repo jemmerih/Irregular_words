@@ -33,4 +33,3 @@ char enter(char check[])
     // printf("%s\n",check);
     return check;
 }
-
