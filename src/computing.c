@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 
+int check_pp(char check[], int error_pp, int random)
+{
+    if (strcmp(check, past_participle[random]) != 0)
+        error_pp++;
+    return error_pp;
+}
+
 int check_ps(char check[], int error_ps, int random)
 {
     if (strcmp(check, past_simple[random]) != 0)
