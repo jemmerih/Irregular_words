@@ -40,8 +40,6 @@ char past_participle[][16]
            "torn",     "told",   "thought", "thrown", "understood", "woken",
            "worn",     "won",    "written"};
 
-char past_simple[][16] = {"beat"};
-
 int check_pp(char check[], int error_pp, int random)
 {
     if (strcmp(check, past_participle[random]) != 0)
