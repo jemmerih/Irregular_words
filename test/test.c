@@ -25,3 +25,23 @@ CTEST(LOWER_TEST, SECOND_TEST)
         i++;
     }
 }
+
+CTEST(CHECK_PS_TEST, FIRST_TEST)
+{
+    int random = 0;
+    char check[] = "beat";
+    int result = 0;
+    result = check_ps(check, result, random);
+    char expected = 0;
+    ASSERT_EQUAL(expected, result);
+}
+
+CTEST(CHECK_PS_TEST, SECOND_TEST)
+{
+    int random = 2;
+    char check[] = "begun";
+    int result = 0;
+    result = check_ps(check, result, random);
+    char expected = 1;
+    ASSERT_EQUAL(expected, result);
+}
