@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 
+int check_ps(char check[], int error_ps, int random)
+{
+    if (strcmp(check, past_simple[random]) != 0)
+        error_ps++;
+    return error_ps;
+}
+
 char enter(char check[])
 {
     int i = 0;
