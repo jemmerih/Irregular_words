@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+char past_participle[][16] = {"beaten"};
+
 char past_simple[][16] = {"beat"};
 
 int check_pp(char check[], int error_pp, int random)
