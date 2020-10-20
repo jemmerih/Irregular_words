@@ -77,3 +77,10 @@ char enter(char check[])
     // printf("%s\n",check);
     return check;
 }
+
+int randomize(random)
+{
+    srand(time(NULL));
+    random = rand() % 98;
+    return random;
+}
