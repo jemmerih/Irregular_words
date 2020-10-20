@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+char past_simple[][16] = {"beat"};
+
 int check_pp(char check[], int error_pp, int random)
 {
     if (strcmp(check, past_participle[random]) != 0)
