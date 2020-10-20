@@ -6,6 +6,7 @@
 
 int check_ps(char check[], int error_ps, int random);
 int check_pp(char check[], int error_pp, int random);
+char lower(char check[]);
 char enter(char check[]);
 
 #endif
